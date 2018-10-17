@@ -25,7 +25,7 @@ em_lib = load_library(path)
   else
     'Sorry, that emoticon was not found'
   end
-end	end
+end
   
 def get_english_meaning
   # code goes here
