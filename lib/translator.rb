@@ -5,6 +5,15 @@ require 'yaml'
 def load_library(path)
   # code goes here
   yaml = YAML.load_file(path)
+  library = { 
+    'get_meaning' => 
+    {}, 'get_emoticon' => {}
+    }
+    
+    
+    
+    
+    
 def get_japanese_emoticon
   # code goes here
 end
