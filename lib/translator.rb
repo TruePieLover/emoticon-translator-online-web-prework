@@ -20,7 +20,8 @@ end
 def get_japanese_emoticon(path, emoji)
   # code goes here
   library = load_library(path)
-  if library.fetch('get_emoticon').has_key?(emoji)
+  #utilize fetch and has_key? 
+  if (library.fetch('get_emoticon').has_key?(emoji))
     return library.fetch('get_emoticon')[emoji]
   else
     return 'Sorry, that emoticon was not found'
