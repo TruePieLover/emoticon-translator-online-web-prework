@@ -17,11 +17,11 @@ library
 end
     
     
-def get_japanese_emoticon(path, em_eng)
+def get_japanese_emoticon(path, emoji)
   # code goes here
 em_lib = load_library(path)
-  if em_lib.fetch('get_emoticon').has_key?(em_eng)
-    em_lib.fetch('get_emoticon')[em_eng]
+  if em_lib.fetch('get_emoticon').has_key?(emoji)
+    em_lib.fetch('get_emoticon')[emoji]
   else
     'Sorry, that emoticon was not found'
   end
