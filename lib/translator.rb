@@ -20,8 +20,8 @@ end
 def get_japanese_emoticon(path, emoji)
   # code goes here
   library = load_library(path)
-  #utilize fetch to check
-  if libraryb.fetch('get_emoticon').has_key?(em_eng)
+  #utilize fetch and the has_key? method to check
+  if libraryb.fetch('get_emoticon').has_key?(emoji)
   
 def get_english_meaning
   # code goes here
