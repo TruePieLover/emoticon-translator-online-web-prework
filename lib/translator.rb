@@ -9,7 +9,7 @@ def load_library(path)
     'get_meaning' => 
     {}, 'get_emoticon' => {}
     }
-    
+  library.each do |meaning, em_arr|
     
     
     
