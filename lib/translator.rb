@@ -9,7 +9,7 @@ def load_library(path)
     'get_meaning' => {}, 
     'get_emoticon' => {}
     }
-  library.each do |key, value|
+  yaml.each do |key, value|
   library['get_meaning'][value[1]] = key
   library['get_emoticon'][value[0]] = value[1]
   end
