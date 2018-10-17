@@ -17,7 +17,7 @@ library
 end
     
     
-def get_japanese_emoticon(path, em_lib)
+def get_japanese_emoticon(path, em_eng)
   # code goes here
 em_lib = load_library(path)
   if em_lib.fetch('get_emoticon').has_key?(em_eng)
