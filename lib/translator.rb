@@ -31,10 +31,10 @@ end
 def get_english_meaning(path, emoji)
   # code goes here
   library = load_library(file_path)
-	library["get_meaning"].each do |key, english_meaning|
+	library['get_meaning'].each do |key, value|
     if emoticon == key
       return value
     end
   end
-  return "Sorry, that emoticon was not found"
+  return 'Sorry, that emoticon was not found'
 end
