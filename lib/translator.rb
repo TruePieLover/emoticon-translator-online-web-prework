@@ -6,14 +6,14 @@ def load_library(path)
   # code goes here
   yaml = YAML.load_file(path)
   library = { 
-    'get_meaning' => 
-    {}, 'get_emoticon' => {}
+    'get_meaning' => {}, 
+    'get_emoticon' => {}
     }
   library.each do |key, value|
-     library['get_meaning'][value[1]] = key
-     library['get_emoticon'][value[0]] = value[1]
+  library['get_meaning'][value[1]] = key
+  library['get_emoticon'][value[0]] = value[1]
   end
-   library
+library
 end
     
     
